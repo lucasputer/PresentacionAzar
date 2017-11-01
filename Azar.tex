@@ -1,0 +1,156 @@
+\begin{frame}
+\frametitle{}
+\medskip
+\begin{figure}[h!]
+"Soy de un país vertiginoso donde la lotería es parte principal de la realidad: hasta el día de hoy, he pensado tan poco en ella como en la conducta de los dioses indescifrables o de mi corazón."\\
+\textbf{Jorge Luis Borges}, \textit{La lotería en Babilonia}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Historia del Azar}
+\medskip
+¿Qué es el azar?\\
+\begin{itemize}
+	\item La pregunta surge junto con el debate filosófico de determinismo vs. libre albedrío
+	\pause
+	\item Los griegos se encontraron con la probabilidad, pero no se animaron por miedo a los dioses 
+	\pause
+	\item Los romanos, fanáticos de los dados, se enfrentaron por primera vez al azar
+	\pause
+	\item Más adelante se desarrolla el campo de la probabilidad, mientras tanto en la filosofía Leibniz trató el tema
+	\pause
+	\item El estudio del azar propiamente dicho comienza con Emíle Borel a principios del siglo 20
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Random?}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{imagenes/random.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Juego}
+\medskip
+\begin{figure}[h!]
+\centering
+\begin{itemize}
+	\item Anoten en una hoja un número al azar del 1 al 10
+	\pause
+	\item Contemos cuantas veces apareció cada uno.
+	\pause
+	\item ¿Fueron entonces elegidos al azar?
+\end{itemize}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Juego 2}
+\medskip
+
+\centering
+Pensemos ahora en el azar más simple que conocemos
+\pause
+\begin{center}
+\includegraphics[scale=0.5]{imagenes/peso.jpg}
+\end{center}
+¿Cómo podemos darnos cuenta si una secuencia infinita de tiradas de monedas es aleatoria?
+Hagamos de cuenta que cara = 1 y ceca = 0:
+\pause
+\begin{itemize}
+	\item 111111111111111111111111111111111111111111...
+	\pause
+	\item 01001000100001000001000000100000001000000001...
+	\pause
+	\item 100101010110001101110100010010101111001001..
+	\pause
+	\item ¿Podrían generar una ustedes?
+\end{itemize}
+Tiene que haber la misma cantidad de caras que de cecas, así como la misma cantidad de combinaciones de tiradas. En caso contrario, podríamos adivinar que va a venir una cantidad infinita de veces!
+\end{frame}
+
+\begin{frame}
+\frametitle{Definamos Azar}
+\medskip
+Azar es imposibilidad de adivinar, de predecir, de comprimir...
+¿Por quién?\\
+\begin{itemize}
+	\item Por un humano? \pause \textcolor{red}{No podemos formalizar, dejemoselo a la filosofía}
+	\pause
+	\item Por una \st{maquina de Turing} computadora \pause \textcolor{blue}{Si! De aquí se formaliza la noción más pura de azar}
+	\pause
+	\item Por \st{automata finito} algo más simple, sin memoria \pause \textcolor{blue}{Si! Aquí podemos formalizar la noción de normalidad}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Normalidad}
+\medskip
+Borel define tres formas de normalidad en 1909
+\begin{itemize}
+	\item Un real $x$ es \textcolor{blue}{simplemente normal} en una base si todos sus símbolos aparecen con la misma frecuencia
+	\pause
+	\item Un real $x$ es \textcolor{blue}{normal} en una base si para cada entero positivo $k$, cada bloque de $k$ digitos aparece con la misma frecuencia
+	\pause
+	\item Un real $x$ es \textcolor{blue}{absolutamente normal} si es normal en todas las bases.
+\end{itemize}
+\pause
+\begin{tikzpicture}[remember picture,overlay]
+\node at (current page.center) {\includegraphics[width=5cm]{imagenes/signo.png}};
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplos}
+\medskip
+\begin{itemize}
+	\item 0.01 002 0003 00004 000005 0000006 00000007 000000008 ... \textcolor{red}{No es simplemente normal en base 10}
+	\pause
+	\item 0.0123456789 0123456789 0123456789 0123456789 0123456789... \textcolor{red}{Es en base 10, pero no en base 100}
+	\pause
+	\item Ningún número racional es normal en ninguna base
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{¿$\pi$ es normal?}
+\begin{center}
+\includegraphics[scale=0.6]{imagenes/digitsofpi.png}
+\end{center}
+\pause
+\begin{tikzpicture}[remember picture,overlay]
+\node at (current page.center) {\includegraphics[width=5cm]{imagenes/signo.png}};
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+\frametitle{$\pi$ es normal?}
+Y si $\pi$ fuera normal? Que implicancias tiene?\\
+\pause
+¿Podrán encontrar su dni adentro de $\pi$?\\
+¿Podrán encontrar Hamlet andentro de $\pi$?\\
+¿Podrán encontrar Hamlet pero donde el protagonista es Peluffo andentro de $\pi$?\\
+\pause
+\begin{center}
+\includegraphics[scale=0.75]{imagenes/piequals.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{La biblioteca de babel, es normal?}
+"El universo (que otros llaman la Biblioteca) se compone de un número indefinido, y tal vez infinito, de galerías hexagonales, con vastos pozos de ventilación en el medio, cercados por barandas bajísimas. Desde cualquier hexágono se ven los pisos inferiores y superiores: interminablemente[...]A cada uno de los muros de cada hexágono corresponden cinco anaqueles; cada anaquel encierra treinta y dos libros de formato uniforme;cada libro es de cuatrocientas diez páginas; cada página, de cuarenta renglones; cada renglón, de unas ochenta letras de color negro."
+\end{frame}
+
+\begin{frame}
+\frametitle{La biblioteca de babel, es normal?}
+"Todos los libros, por diversos que sean, constan de elementos iguales: el espacio, el punto, la coma, las veintidós letras del alfabeto. También alegó un hecho que todos los viajeros han confirmado: No hay en la vasta Biblioteca, dos libros idénticos. De esas premisas incontrovertibles dedujo que la Biblioteca es total y que sus anaqueles registran todas las posibles combinaciones de los veintitantos símbolos ortográficos (número, aunque vastísimo, no infinito) o sea todo lo que es dable expresar: en todos los idiomas. Todo: la historia minuciosa del porvenir, las autobiografías de los arcángeles, el catálogo fiel de la Biblioteca, miles y miles de catálogos falsos, la demostración de la falacia de esos catálogos, la demotración de la falacia del catálogo verdadero."\\ \textbf{Jorge Luis Borges}, \textit{La biblioteca de Babel}
+\end{frame}
+
+\begin{frame}
+\frametitle{La biblioteca de babel, es normal?}
+"Todos los libros, por diversos que sean, constan de elementos iguales: el espacio, el punto, la coma, las veintidós letras del alfabeto. También alegó un hecho que todos los viajeros han confirmado: \textcolor{red}{No hay en la vasta Biblioteca, dos libros idénticos.} De esas premisas incontrovertibles dedujo que la Biblioteca es total y que sus anaqueles registran todas las posibles combinaciones de los veintitantos símbolos ortográficos \textcolor{red}{(número, aunque vastísimo, no infinito)} o sea todo lo que es dable expresar: en todos los idiomas. Todo: la historia minuciosa del porvenir, las autobiografías de los arcángeles, el catálogo fiel de la Biblioteca, miles y miles de catálogos falsos, la demostración de la falacia de esos catálogos, la demotración de la falacia del catálogo verdadero."\\ \textbf{Jorge Luis Borges}, \textit{La biblioteca de Babel}
+\end{frame}
+
